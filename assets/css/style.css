@@ -13,6 +13,8 @@
     --orange_peel: #FF9F1C;
     --space_cadet: #151E3F;
     --baby_powder: #FDFFFC;
+    --borda1: #2b2b2b9f;
+    --sombra1: #33333342;
 }
 
 html  {
@@ -27,28 +29,41 @@ html > body {
     height: 100%;
 }
 
-header {
+nav {
     width: 100%;
-    height: 100%;
-    background-color: var(--cerulean);
-    position: relative;
+    height: 60px;
+    border-bottom: 1px solid var(--borda1);
+    box-shadow: 0px 4px 16px var(--sombra1);
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
 }
 
-header > h1#nome {
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+header {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header > h2 {
     color: var(--space_cadet);
-    font-size: 3.5rem;
-    width: 50%;
-    padding: 20px;
-    /* background-color: red; */
+    font-size: 3.2rem;
+    width: 75%;
+    text-align: center;
+}
+
+header > h3 {
+    color: var(--space_cadet);
+    font-size: 1.8rem;
+    padding-bottom: 20px;
 }
 
 header span {
@@ -56,7 +71,7 @@ header span {
 }
 
 header > #contatos {
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,27 +79,57 @@ header > #contatos {
     gap: 10px;
 }
 
-header > #contatos > p {
-    padding-left: 20px;
-    width: 100%;
-}
-
 header > #contatos > .contato {
     color: black;
     text-decoration: none;
-    border: 1px solid var(--space_cadet);
+    border: 2px solid var(--space_cadet);
     cursor: pointer;
-    padding: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all .4s;
-    background-color: var(--cerulean);
+    background-color: white;
+}
+
+header > #contatos > #email {
+    cursor: auto;
+}
+
+header > #contatos > #email:hover {
+    filter: none;
+}
+
+header > #contatos > #email > abbr > .copy {
+    margin-left: -20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 1px solid var(--borda1);
+    cursor: pointer;
+    background-color: white;
+    transition: all .4s;
+}
+
+header > #contatos .icon {
+    margin-left: -20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 1px solid var(--borda1);
+}
+
+header > #contatos > #email > abbr > .copy:hover {
+    filter: brightness(80%);
 }
 
 header > #contatos > .curriculo {
     color: black;
     text-decoration: none;
-    border: 1px solid var(--space_cadet);
+    border: 2px solid var(--space_cadet);
     cursor: pointer;
-    padding: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--orange_peel);
     transition: all .4s;
 }
