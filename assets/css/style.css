@@ -194,7 +194,7 @@ main > section#projects {
     padding: 80px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 main > section#projects > h3 {
@@ -203,7 +203,7 @@ main > section#projects > h3 {
 
 main > section#projects > div.projeto-l, main > section#projects > div.projeto-r {
     width: 94%;
-    border: 1px solid var(--borda1);
+    box-shadow: 0 0 10px var(--sombra1);
     border-radius: 12px;
     display: flex;
     cursor: pointer;
@@ -253,6 +253,7 @@ main > section#projects > div.projeto-l > div.desc > div.tecs, main > section#pr
 
 main > section#projects > div.projeto-l > div.desc > div.tecs > div.tags, main > section#projects > div.projeto-r > div.desc > div.tecs > div.tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin: 8px 0 ;
 }
@@ -265,8 +266,56 @@ div.tec {
     border-radius: 12px;
 }
 
-main > section#projects > div.projeto-l > div.desc > p.click, main > section#projects > div.projeto-r > div.desc > p.click {
+main > section#projects > div.projeto-l > div.desc > p.click {
     position: absolute;
     bottom: 12px;
     left: 24px;
+}
+
+main > section#projects > div.projeto-r > div.desc > p.click {
+    position: absolute;
+    bottom: 2px;
+    left: 24px;
+}
+
+main > section#softskills {
+    width: 100%;
+    min-height: 100%;
+    padding: 80px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main > section#softskills > h3 {
+    font-size: 2rem;
+}
+
+main > section#softskills > div#competencias {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+main > section#softskills > div#competencias > div.competencia {
+    width: 200px;
+    height: 210px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--sombra1);
+    padding: 10px;
+}
+
+main > section#softskills > div#competencias > div.competencia > h4.nome-comp {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+main > section#softskills > div#competencias > div.competencia > p.desc-comp {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
