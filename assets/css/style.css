@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Roboto Mono", monospace;
 }
 
 :root {
@@ -18,323 +18,86 @@
     --sombra1: #33333342;
 }
 
-html  {
+html {
     width: 100vw;
     min-width: 100%;
     max-width: min-content;
     height: 100vh;
-    scroll-behavior: smooth;
 }
 
-html > body {
-    width: 100%;
-    height: 100%;
-}
-
-nav {
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 4px 16px var(--sombra1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background-color: white;
-    z-index: 2;
-}
-
-nav > div#caminhos {
-    display: flex;
-    gap: 12px;
-}
-
-nav > div#caminhos > a.caminho {
-    color: black;
-    text-decoration: none;
-}
-
-abbr {
-    text-decoration: none;
-}
-
-header {
+body {
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, white 75%, var(--alice_blue));
 }
 
-header > h2 {
-    color: var(--space_cadet);
-    font-size: 3.2rem;
-    width: 75%;
-    text-align: center;
+#desk {
+    max-width: 800px;
+    max-height: 600px;
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px #8b8b8b6b;
 }
 
-header > h3 {
-    color: var(--space_cadet);
-    font-size: 1.8rem;
-    padding-bottom: 20px;
-}
-
-span.span {
-    color: var(--orange_peel);
-}
-
-header > #contatos {
-    width: 55%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-}
-
-header > #contatos > .contato {
-    color: black;
-    text-decoration: none;
-    border: 2px solid var(--space_cadet);
-    cursor: pointer;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s;
-    background-color: white;
-}
-
-header > #contatos > #email {
-    cursor: auto;
-}
-
-header > #contatos > #email:hover {
-    filter: none;
-}
-
-header > #contatos > #email > abbr > .copy {
-    margin-left: -20px;
-    margin-right: 20px;
-    padding: 20px;
-    border-right: 1px solid var(--borda1);
-    cursor: pointer;
-    background-color: white;
-    transition: all .4s;
-}
-
-.icon {
-    margin-left: -20px;
-    margin-right: 20px;
-    padding: 20px;
-    border-right: 1px solid var(--borda1);
-}
-
-header > #contatos > #email > abbr > .copy:hover, header > #contatos > .contato:hover {
-    filter: brightness(80%);
-}
-
-.curriculo {
-    color: black;
-    text-decoration: none;
-    border: 2px solid var(--space_cadet);
-    cursor: pointer;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--orange_peel);
-    transition: all .4s;
-}
-
-.curriculo:hover {
-    filter: brightness(80%);
-}
-
-main {
-    width: 100%;
-    min-height: 100%;
-    height: 100%;
-}
-
-main > section#about {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    background-color: var(--alice_blue);
-}
-
-main > section#about > p.apresentacao, main > section#about > p.apresentacao > span {
-    width: 70%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-main > section#about > #tecnologias {
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px;
-}
-
-main > section#about > #tecnologias > .tecnologia {
-    width: 60px;
-    height: 60px;
-}
-
-main > section#about > #tecnologias > .tecnologia > abbr > img {
-    width: 100%;
-    height: 100%;
-}
-
-main > section#projects {
-    width: 100%;
-    padding: 80px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-main > section#projects > h3 {
-    font-size: 2rem;
-}
-
-main > section#projects > div.projeto-l, main > section#projects > div.projeto-r {
-    width: 94%;
-    box-shadow: 0 0 10px var(--sombra1);
-    border-radius: 12px;
-    display: flex;
-    cursor: pointer;
-}
-
-main > section#projects > div.projeto-r {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-left: 6%;
-}
-
-main > section#projects > div.projeto-l > div.img, main > section#projects > div.projeto-r > div.img {
-    min-width: 50%;
-}
-
-main > section#projects > div.projeto-l > div.img > img {
-    width: 100%;
-    border-radius: 20px 0 0 4px;
-}
-
-main > section#projects > div.projeto-r > div.img > img {
-    width: 100%;
-    border-radius: 0 20px 4px 0;
-}
-
-main > section#projects > div.projeto-l > div.desc, main > section#projects > div.projeto-r > div.desc {
-    min-width: 50%;
-    padding: 12px 8px 12px 24px;
-    position: relative;
-}
-
-main > section#projects > div.projeto-r > div.desc {
-    text-align: left;
-}
-
-main > section#projects > div.projeto-l > div.desc > h4.titulo, main > section#projects > div.projeto-r > div.desc {
-    margin-bottom: 12px;
-}
-
-main > section#projects > div.projeto-l > div.desc > ul > li, main > section#projects > div.projeto-r > div.desc > ul > li {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main > section#projects > div.projeto-l > div.desc > div.tecs, main > section#projects > div.projeto-r > div.desc > div.tecs {
-    margin-top: 12px;
-}
-
-main > section#projects > div.projeto-l > div.desc > div.tecs > div.tags, main > section#projects > div.projeto-r > div.desc > div.tecs > div.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 8px 0 ;
-}
-
-div.tec {
-    background-color: blue;
+#desk > .head {
+    height: 40px;
+    background-color: #464646;
     color: white;
-    font-weight: bold;
-    padding: 6px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
 }
 
-main > section#projects > div.projeto-l > div.desc > p.click {
-    position: absolute;
-    bottom: 12px;
-    left: 24px;
-}
-
-main > section#projects > div.projeto-r > div.desc > p.click {
-    position: absolute;
-    bottom: 2px;
-    left: 24px;
-}
-
-main > section#softskills {
-    width: 100%;
-    min-height: 100%;
-    padding: 80px 20px 0 20px;
+#desk > .content {
+    height: calc(100% - 40px);
+    border: 2px solid #6e6e6ea6;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#desk > .content > h1 {
+    font-size: 2.5rem;
+}
+
+#desk > .content > h1 > span {
+    color: #FF9F1C;
+}
+
+#desk > .content > h2 {
+    color: #6e6e6e;
+    font-size: 1.3rem;
+}
+
+#desk > .content > #links {
+    display: flex;
+    margin-top: 20px;
     gap: 20px;
 }
 
-main > section#softskills > h3 {
-    font-size: 2rem;
+#desk > .content > #links > .link {
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-shadow: 0 5px 5px #686868;
+    transition: .4s all ease-in-out;
 }
 
-main > section#softskills > div#competencias {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-}
-
-main > section#softskills > div#competencias > div.competencia {
-    width: 200px;
-    height: 210px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px var(--sombra1);
-    padding: 10px;
-}
-
-main > section#softskills > div#competencias > div.competencia > h4.nome-comp {
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-main > section#softskills > div#competencias > div.competencia > p.desc-comp {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+#desk > .content > #links > .link:hover {
+    font-size: 1.3rem;
 }
 
 footer {
-    height: 60px;
     width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
 }
