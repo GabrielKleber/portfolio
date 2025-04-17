@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Gabriel Kleber</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <div id="desk">
-        <div class="head">
-            <h4>home</h4>
+      <div class="head">
+        <h4>home</h4>
+      </div>
+      <div class="content">
+        <h1>Olá! <span>Eu sou Gabriel Kleber</span></h1>
+        <h2>Desenvolvedor Full-Stack</h2>
+        <div id="links">
+          <div class="link" onclick="show('about')">
+            <i class="bi bi-info-circle"></i>
+            Sobre
+          </div>
+          <div class="link" onclick="show('projects')">
+            <i class="bi bi-briefcase"></i>
+            Projetos
+          </div>
+          <div class="link" onclick="show('softskills')">
+            <i class="bi bi-person"></i>
+            Competências
+          </div>
+          <div class="link" onclick="show('contact')">
+            <i class="bi bi-envelope"></i>
+            Contatos
+          </div>
         </div>
-        <div class="content">
-            <h1>Olá! <span>Eu sou Gabriel Kleber</span></h1>
-            <h2>Desenvolvedor Full-Stack</h2>
-            <div id="links">
-                <div class="link">
-                    <i class="bi bi-info-circle"></i>
-                    Sobre
-                </div>
-                <div class="link">
-                    <i class="bi bi-briefcase"></i>
-                    Projetos
-                </div>
-                <div class="link">
-                    <i class="bi bi-person"></i>
-                    Competências
-                </div>
-                <div class="link">
-                    <i class="bi bi-envelope"></i>
-                    Contatos
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <footer>
-        &copy; 2025 Gabriel Kleber
-    </footer>
-</body>
+    <footer>&copy; 2025 Gabriel Kleber</footer>
+
+    <section id="about">
+        <div class="head">
+            Sobre
+            <div class="close_window" onclick="close_window('about')">[X]</div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="head">
+            Projetos
+            <div class="close_window" onclick="close_window('projects')">[X]</div>
+        </div>
+    </section>
+    <section id="softskills">
+        <div class="head">
+            Competências
+            <div class="close_window" onclick="close_window('softskills')">[X]</div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="head">
+            Contato
+            <div class="close_window" onclick="close_window('contact')">[X]</div>
+        </div>
+    </section>
+  </body>
+  <script src="assets/js/app.js"></script>
 </html>
