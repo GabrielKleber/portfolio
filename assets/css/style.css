@@ -132,3 +132,25 @@ section > .head > .close_window {
 section > .head > .close_window:hover {
     font-size: 1.1rem;
 }
+
+section#about {
+    top: 5%;
+    left: 5%;
+    width: 75%;
+    max-width: 700px;
+}
+
+section#projects {
+    top: 12%;
+    left: 10%;
+}
+
+section#softskills {
+    top: 5%;
+    left: 65%;
+}
+
+section#contact {
+    top: 12%;
+    left: 60%;
+}

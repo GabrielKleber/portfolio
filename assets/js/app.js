@@ -2,9 +2,12 @@ let newX_about = 0, newY_about = 0, startX_about = 0, startY_about = 0;
 let newX_projects = 0, newY_projects = 0, startX_projects = 0, startY_projects = 0;
 let newX_softskills = 0, newY_softskills = 0, startX_softskills = 0, startY_softskills = 0;
 let newX_contact = 0, newY_contact = 0, startX_contact = 0, startY_contact = 0;
+let z_index = 2;
 
 function show(id) {
     document.querySelector("section#" + id).style.display = "block";
+    document.querySelector("section#" + id).style.zIndex = z_index;
+    z_index ++;
 }
 
 function close_window(id) {
@@ -26,6 +29,9 @@ contact_card.addEventListener("mousedown", mouseDown_contact);
 function mouseDown_about(e) {
     startX_about = e.clientX;
     startY_about = e.clientY;
+    
+    about_card.style.zIndex = z_index;
+    z_index ++;
 
     document.addEventListener('mousemove', mouseMove_about);
     document.addEventListener('mouseup', mouseUp_about);
@@ -35,6 +41,9 @@ function mouseDown_projects(e) {
     startX_projects = e.clientX;
     startY_projects = e.clientY;
 
+    projects_card.style.zIndex = z_index;
+    z_index ++;
+
     document.addEventListener('mousemove', mouseMove_projects);
     document.addEventListener('mouseup', mouseUp_projects);
 }
@@ -43,6 +52,9 @@ function mouseDown_softskills(e) {
     startX_softskills = e.clientX;
     startY_softskills = e.clientY;
 
+    softskills_card.style.zIndex = z_index;
+    z_index ++;
+
     document.addEventListener('mousemove', mouseMove_softskills);
     document.addEventListener('mouseup', mouseUp_softskills);
 }
@@ -50,6 +62,9 @@ function mouseDown_softskills(e) {
 function mouseDown_contact(e) {
     startX_contact = e.clientX;
     startY_contact = e.clientY;
+
+    contact_card.style.zIndex = z_index;
+    z_index ++;
 
     document.addEventListener('mousemove', mouseMove_contact);
     document.addEventListener('mouseup', mouseUp_contact);
