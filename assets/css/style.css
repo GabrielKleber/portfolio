@@ -138,11 +138,45 @@ section#about {
     left: 5%;
     width: 75%;
     max-width: 700px;
+    height: auto;
+}
+
+section#about > div.window_content {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+section#about > div.window_content > div.tec {
+    width: 100%;
+    margin: 10px 0;
+}
+
+section#about > div.window_content > div.tec > ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#about > div.window_content > div.tec > ul > li {
+    list-style: none;
+    margin: 10px 5px;
+    border: 1px solid #6e6e6ea6;
+    padding: 2px 4px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 2px #8b8b8b6b;
+    cursor: default;
 }
 
 section#projects {
     top: 12%;
     left: 10%;
+    width: 85%;
+    max-width: 900px;
 }
 
 section#softskills {

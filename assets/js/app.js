@@ -19,10 +19,10 @@ let projects_card = document.querySelector("section#projects");
 let softskills_card = document.querySelector("section#softskills");
 let contact_card = document.querySelector("section#contact");
 
-about_card.addEventListener("mousedown", mouseDown_about);
-projects_card.addEventListener("mousedown", mouseDown_projects);
-softskills_card.addEventListener("mousedown", mouseDown_softskills);
-contact_card.addEventListener("mousedown", mouseDown_contact);
+document.querySelector("section#about > div.head").addEventListener("mousedown", mouseDown_about);
+document.querySelector("section#projects > div.head").addEventListener("mousedown", mouseDown_projects);
+document.querySelector("section#softskills > div.head").addEventListener("mousedown", mouseDown_softskills);
+document.querySelector("section#contact > div.head").addEventListener("mousedown", mouseDown_contact);
 
 // Mouse Down Start
 
