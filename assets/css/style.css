@@ -8,16 +8,6 @@
     font-family: "Roboto Mono", monospace;
 }
 
-:root {
-    --cerulean: #007EA7;
-    --orange_peel: #FF9F1C;
-    --space_cadet: #151E3F;
-    --baby_powder: #FDFFFC;
-    --alice_blue: #F4FAFF;
-    --borda1: #2b2b2b9f;
-    --sombra1: #33333342;
-}
-
 html {
     width: 100vw;
     min-width: 100%;
@@ -141,7 +131,7 @@ section#about {
     height: auto;
 }
 
-section#about > div.window_content {
+section#about > div.window_about {
     width: 100%;
     height: calc(100% - 40px);
     overflow: auto;
@@ -149,19 +139,19 @@ section#about > div.window_content {
     font-size: 1.2rem;
 }
 
-section#about > div.window_content > div.tec {
+section#about > div.window_about > div.tec {
     width: 100%;
     margin: 10px 0;
 }
 
-section#about > div.window_content > div.tec > ul {
+section#about > div.window_about > div.tec > ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-section#about > div.window_content > div.tec > ul > li {
+section#about > div.window_about > div.tec > ul > li {
     list-style: none;
     margin: 10px 5px;
     border: 1px solid #6e6e6ea6;
@@ -172,11 +162,112 @@ section#about > div.window_content > div.tec > ul > li {
     cursor: default;
 }
 
+section#about > div.window_about > .curriculo {
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 10px;
+    display: flex;
+    border: 1px solid #6e6e6ea6;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF9F1C;
+    box-shadow: 0 4px 2px #8b8b8b6b;
+    gap: 4px;
+    transition: .4s;
+}
+
+section#about > div.window_about > .curriculo:hover {
+    font-size: 1.23rem;
+}
+
+section#about > div.window_about > .curriculo > .icon > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 section#projects {
     top: 12%;
     left: 10%;
     width: 85%;
     max-width: 900px;
+}
+
+section#projects > div.window_projects {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: auto;
+}
+
+section#projects > div.window_projects > h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+section#projects > div.window_projects > #cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#projects > div.window_projects > #cards > .card {
+    width: 30%;
+    height: 360px;
+    border: 1px solid #6e6e6ea6;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+section#projects > div.window_projects > #cards > .card > .img {
+    width: 100%;
+}
+
+section#projects > div.window_projects > #cards > .card > .img > img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+section#projects > div.window_projects > #cards > .card > .desc {
+    width: 100%;
+    height: auto;
+}
+
+section#projects > div.window_projects > #cards > .card > .desc > h4 {
+    text-align: center;
+}
+
+section#projects > div.window_projects > #cards > .card > .desc > .tec {
+    width: 100%;
+}
+
+section#projects > div.window_projects > #cards > .card > .desc > .tec > ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#projects > div.window_projects > #cards > .card > .desc > .tec > ul > li {
+    list-style: none;
+    margin: 10px 5px;
+    border: 1px solid #6e6e6ea6;
+    padding: 2px 4px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 2px #8b8b8b6b;
+}
+
+section#projects > div.window_projects > #cards > .card > p {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+
 }
 
 section#softskills {
@@ -187,4 +278,35 @@ section#softskills {
 section#contact {
     top: 12%;
     left: 60%;
+}
+
+/* Slider */
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal > .slider {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal > .slider > .slide {
+    width: 100%;
+}
+
+.modal > .slider > .slide > img {
+    width: 100%;
 }
