@@ -88,7 +88,7 @@
         <h3>Meus Projetos</h3>
 
         <div id="cards">
-          <div class="card">
+          <div class="card" onclick="show_modal('fynder')">
             <div class="img">
               <img src="assets/img/img_apoio/fynder.png" alt="Fynder Food">
             </div>
@@ -108,7 +108,7 @@
             <p>Clique para ver mais</p>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="show_modal('automind')">
             <div class="img">
               <img src="assets/img/img_apoio/automind.png" alt="AutoMind">
             </div>
@@ -130,7 +130,7 @@
             <p>Clique para ver mais</p>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="show_modal('lista')">
             <div class="img">
               <img src="assets/img/img_apoio/listadetarefas.png" alt="Lista de Tarefas">
             </div>
@@ -171,8 +171,11 @@
 
     <!-- Sliders -->
 
-    <!-- <div class="modal">
-      <div class="slider" id="fynder">
+    <div class="modal" id="fynder">
+      <button class="close_modal" onclick="close_modal('fynder')">[X]</button>
+      <button class="left_arrow" onclick="back_slide('fynder')"><i class="bi bi-caret-left"></i></button>
+      <button class="right_arrow" onclick="pass_slide('fynder')"><i class="bi bi-caret-right"></i></button>
+      <div class="slider">
         <div class="slide first">
           <img src="assets/img/img_apoio/slides/fynder/slide1.png" alt="Fynder Food Inicial">
         </div>
@@ -204,7 +207,83 @@
           <img src="assets/img/img_apoio/slides/fynder/slide10.png" alt="Finalizar Compra">
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <div class="modal" id="automind">
+      <button class="close_modal" onclick="close_modal('automind')">[X]</button>
+      <button class="left_arrow" onclick="back_slide('automind')"><i class="bi bi-caret-left"></i></button>
+      <button class="right_arrow" onclick="pass_slide('automind')"><i class="bi bi-caret-right"></i></button>
+      <div class="slider">
+        <div class="slide first">
+          <img src="assets/img/img_apoio/slides/automind/slide1.png" alt="AutoMind Inicial">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide2.png" alt="Tela de Login">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide3.png" alt="Tela de Cadastro">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide4.png" alt="Tela de Bem vindo">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide5.png" alt="Cadastro de Item">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide6.png" alt="Explicação da Taxonomia de Bloom">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide7.png" alt="Banco de Itens">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide8.png" alt="Avaliações existentes">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide9.png" alt="Pré-visualização da avaliação">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/automind/slide10.png" alt="Avaliação Emitida">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="lista">
+      <button class="close_modal" onclick="close_modal('lista')">[X]</button>
+      <button class="left_arrow" onclick="back_slide('lista')"><i class="bi bi-caret-left"></i></button>
+      <button class="right_arrow" onclick="pass_slide('lista')"><i class="bi bi-caret-right"></i></button>
+      <div class="slider">
+        <div class="slide first">
+          <img src="assets/img/img_apoio/slides/lista/slide1.png" alt="Página Inicial">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide2.png" alt="Cadastro de Nova Tarefa">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide3.png" alt="Nova Tarefa Cadastrada">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide4.png" alt="Filtrando por Novas Tarefas">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide5.png" alt="Filtrando por Tarefas em Progresso">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide6.png" alt="Filtrando por Tarefas Canceladas">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide7.png" alt="Filtrando por Tarefas Concluidas">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide8.png" alt="Editando uma Tarefa">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide9.png" alt="Eliminando uma Tarefa">
+        </div>
+        <div class="slide">
+          <img src="assets/img/img_apoio/slides/lista/slide10.png" alt="Mudando o Status de uma Tarefa">
+        </div>
+      </div>
+    </div>
   </body>
   <script src="assets/js/windows.js"></script>
   <script src="assets/js/slides.js"></script>

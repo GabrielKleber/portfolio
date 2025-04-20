@@ -283,30 +283,67 @@ section#contact {
 /* Slider */
 
 .modal {
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 9999;
     backdrop-filter: blur(2px);
-    display: flex;
+    overflow: hidden;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.modal > button {
+    position: absolute;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+    background-color: transparent;
+}
+
+.modal > button.close_modal {
+    top: 5%;
+    right: 2%;
+    font-size: 1.3rem;
+}
+
+.modal > button.close_modal:hover {
+    font-size: 1.35rem;
+}
+
+.modal > button.left_arrow {
+    left: 13%;
+}
+
+.modal > button.right_arrow {
+    right: 13%;
+}
+
+.modal > button.left_arrow, .modal > button.right_arrow {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #686868;
+}
+
+.modal > button.left_arrow:hover, .modal > button.right_arrow:hover {
+    font-size: 2.1rem;
 }
 
 .modal > .slider {
-    width: 70%;
-    height: auto;
+    max-width: 67%;
+    max-height: 80%;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .modal > .slider > .slide {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transition: .6s;
 }
 
 .modal > .slider > .slide > img {
     width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
