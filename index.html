@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Gabriel Kleber</title>
-    <link rel="stylesheet" href="assets/css/style.css" media="screen and (min-width: 790px)"/>
-    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 790px)"/>
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      media="screen and (min-width: 790px)"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/mobile.css"
+      media="screen and (max-width: 790px)"
+    />
   </head>
   <body>
     <div id="desk">
@@ -278,62 +286,54 @@
 
     <section id="contact">
       <div class="head">
-        Contato
+        Entre me Contato
         <div class="close_window" onclick="close_window('contact')">[X]</div>
       </div>
       <div class="window_contact">
-        <div id="ways">
-          <a href="https://wa.me/5583981222675" target="_blank" class="contact">
-            <div class="icon">
-              <i class="bi bi-whatsapp"></i>
-            </div>
-            +55 (83) 98122-2675
-          </a>
+        <form
+          action="https://formsubmit.co/gabrielklebersilvab@gmail.com"
+          method="POST"
+          class="form-contato"
+        >
+          <!-- Nome -->
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome"
+            required
+          />
 
-          <div class="contact" id="email" onclick="copyEmail()">
-            <abbr title="copiar">
-              <div class="copy">
-                <i class="bi bi-clipboard"></i>
-              </div>
-            </abbr>
-            gabrielklebern@gmail.com
-          </div>
+          <!-- E-mail -->
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+          />
 
-          <a
-            href="https://www.linkedin.com/in/gabriel-kleber-30455b354/"
-            target="_blank"
-            class="contact"
-            id="linkedin"
-          >
-            <div class="icon">
-              <i class="bi bi-linkedin"></i>
-            </div>
-            LinkedIn
-          </a>
+          <!-- Mensagem -->
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
 
-          <a
-            href="https://github.com/GabrielKleber/"
-            target="_blank"
-            class="contact"
-          >
-            <div class="icon">
-              <i class="bi bi-github"></i>
-            </div>
-            Github
-          </a>
+          <!-- Campos ocultos do FormSubmit -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://gabrielkleber.github.io/portfolio/obrigado.html"
+          />
 
-          <a
-            href="assets/files/Curriculo.pdf"
-            download="Curriculo.pdf"
-            target="_blank"
-            class="curriculo"
-          >
-            <div class="icon">
-              <i class="bi bi-file-earmark-spreadsheet"></i>
-            </div>
-            Meu Curriculo
-          </a>
-        </div>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
       </div>
     </section>
 
