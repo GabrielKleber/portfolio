@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio Gabriel Kleber</title>
+    <title>Gabriel Kleber Portfolio</title>
     <link
       rel="stylesheet"
       href="assets/css/style.css"
@@ -21,42 +21,41 @@
         <h4>home</h4>
       </div>
       <div class="content">
-        <h1>Olá! <span>Eu sou Gabriel Kleber</span></h1>
-        <h2>Desenvolvedor Full-Stack</h2>
+        <h1>Hello! <span>I am Gabriel Kleber</span></h1>
+        <h2>Full-Stack Developer</h2>
         <div id="links">
           <div class="link" onclick="show('about')">
             <i class="bi bi-info-circle"></i>
-            Sobre
+            About
           </div>
           <div class="link" onclick="show('projects')">
             <i class="bi bi-briefcase"></i>
-            Projetos
+            Projects
           </div>
           <div class="link" onclick="show('softskills')">
             <i class="bi bi-person"></i>
-            Competências
+            Skills
           </div>
           <div class="link" onclick="show('contact')">
             <i class="bi bi-envelope"></i>
-            Contatos
+            Contact
           </div>
         </div>
       </div>
     </div>
-    <footer>&copy; 2025 Gabriel Kleber</footer>
+    <footer>&copy; 2026 Gabriel Kleber</footer>
 
     <section id="about">
       <div class="head">
-        Sobre
+        About
         <div class="close_window" onclick="close_window('about')">[X]</div>
       </div>
       <div class="window_about">
         <p class="desc">
-          Olá! Me chamo Gabriel Kleber e sou desenvolvedor Full Stack com 3 anos
-          de experiência. Especializado na criação de funcionalidades para sites
-          com PHP e no desenvolvimento de automações com Python, atuo como
-          freelancer e me esforço para encontrar soluções para seus problemas
-          usando:
+          Hello! My name is Gabriel Kleber and I am a Full Stack developer with
+          3 years of experience. Specialized in creating website features using
+          PHP and developing automation with Python, I work as a freelancer and
+          strive to find solutions to your problems using:
         </p>
         <div class="tec">
           <ul>
@@ -76,31 +75,30 @@
           </ul>
         </div>
         <p class="desc">
-          Experiência na revisão, atualização e criação de código seguindo os
-          princípios do Clean Code. Acesse meu currículo ou entre em contato
-          comigo para saber mais:
+          Experience reviewing, updating, and creating code following Clean Code
+          principles. Access my resume or contact me to learn more:
         </p>
         <a
-          href="assets/files/Curriculo.pdf"
-          download="Curriculo.pdf"
+          href="assets/files/Curriculum.pdf"
+          download="Curriculum.pdf"
           target="_blank"
           class="curriculo"
         >
           <div class="icon">
             <i class="bi bi-file-earmark-spreadsheet"></i>
           </div>
-          Meu Currículo
+          My Resume
         </a>
       </div>
     </section>
 
     <section id="projects">
       <div class="head">
-        Projetos
+        Projects
         <div class="close_window" onclick="close_window('projects')">[X]</div>
       </div>
       <div class="window_projects">
-        <h3>Meus Projetos</h3>
+        <h3>My Projects</h3>
 
         <div id="cards">
           <div class="card" onclick="show_modal('fynder')">
@@ -120,7 +118,7 @@
                 </ul>
               </div>
             </div>
-            <p>Clique para ver mais</p>
+            <p>Click to see more</p>
           </div>
 
           <div class="card" onclick="show_modal('automind')">
@@ -142,18 +140,18 @@
                 </ul>
               </div>
             </div>
-            <p>Clique para ver mais</p>
+            <p>Click to see more</p>
           </div>
 
           <div class="card" onclick="show_modal('lista')">
             <div class="img">
               <img
                 src="assets/img/img_apoio/listadetarefas.png"
-                alt="Lista de Tarefas"
+                alt="Task List"
               />
             </div>
             <div class="desc">
-              <h4>Lista de Tarefas</h4>
+              <h4>Task List</h4>
               <div class="tec">
                 <ul>
                   <li>Node.js</li>
@@ -165,7 +163,7 @@
                 </ul>
               </div>
             </div>
-            <p>Clique para ver mais</p>
+            <p>Click to see more</p>
           </div>
         </div>
       </div>
@@ -173,111 +171,108 @@
 
     <section id="softskills">
       <div class="head">
-        Competências
+        Skills
         <div class="close_window" onclick="close_window('softskills')">[X]</div>
       </div>
       <div class="window_softskills">
-        <h3>Minhas Competências Profissionais</h3>
+        <h3>My Professional Skills</h3>
         <div class="tags">
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Trabalho em equipe
+              Teamwork
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Habilidade de trabalhar de forma colaborativa em equipe,
-              contribuindo com minhas habilidades e ideias para alcançar
-              objetivos comuns.
+              Ability to work collaboratively in a team, contributing my skills
+              and ideas to achieve common goals.
             </div>
           </div>
 
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Comunicação
+              Communication
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Capacidade de me expressar de forma clara e concisa, facilitando a
-              colaboração com colegas de equipe e clientes.
+              Ability to express myself clearly and concisely, facilitating
+              collaboration with teammates and clients.
             </div>
           </div>
 
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Proatividade
+              Proactivity
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Capacidade de tomar iniciativa, buscar novas oportunidades,
-              assumir responsabilidades e agir proativamente para evitar
-              problemas.
+              Ability to take initiative, seek new opportunities, take
+              responsibility, and act proactively to prevent problems.
             </div>
           </div>
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Resiliência
+              Resilience
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Capacidade de enfrentar desafios e adversidades com determinação e
-              otimismo, buscando aprendizado e crescimento a partir das
-              experiências.
+              Ability to face challenges and adversity with determination and
+              optimism, seeking learning and growth from experiences.
             </div>
           </div>
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Pensamento Crítico
+              Critical Thinking
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Habilidade de analisar informações de forma crítica, avaliando
-              diferentes perspectivas e tomando decisões fundamentadas.
+              Ability to analyze information critically, evaluate different
+              perspectives, and make well-founded decisions.
             </div>
           </div>
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Organização e gerenciamento de tempo
+              Organization and time management
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Capacidade de organizar tarefas, definir prioridades e gerenciar o
-              tempo de forma eficaz para cumprir prazos e alcançar objetivos.
+              Ability to organize tasks, set priorities, and manage time
+              effectively to meet deadlines and achieve goals.
             </div>
           </div>
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Liderança
+              Leadership
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Habilidade de influenciar e orientar pessoas em um grupo,
-              direcionando ações para alcançar objetivos comuns.
+              Ability to influence and guide people in a group, directing
+              actions to achieve common goals.
             </div>
           </div>
           <div class="softskill">
             <div class="skill" onclick="show_description(this)">
-              Adaptabilidade
+              Adaptability
               <div class="arrow">
                 <i class="bi bi-caret-down"></i>
               </div>
             </div>
             <div class="description">
-              Capacidade de se adaptar a novos desafios e ambientes de trabalho,
-              lidando de forma eficaz com mudanças e imprevistos.
+              Ability to adapt to new challenges and work environments,
+              effectively handling changes and unexpected situations.
             </div>
           </div>
         </div>
@@ -286,7 +281,7 @@
 
     <section id="contact">
       <div class="head">
-        Entre me Contato
+        Contact Me
         <div class="close_window" onclick="close_window('contact')">[X]</div>
       </div>
       <div class="window_contact">
@@ -295,268 +290,46 @@
           method="POST"
           class="form-contato"
         >
-          <!-- Nome -->
-          <label for="nome">Nome</label>
+          <label for="nome">Name</label>
           <input
             type="text"
             id="nome"
             name="nome"
-            placeholder="Seu nome"
+            placeholder="Your name"
             required
           />
 
-          <!-- E-mail -->
           <label for="email">E-mail</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Seu e-mail"
+            placeholder="Your email"
             required
           />
 
-          <!-- Mensagem -->
-          <label for="mensagem">Mensagem</label>
+          <label for="mensagem">Message</label>
           <textarea
             id="mensagem"
             name="mensagem"
             rows="5"
-            placeholder="Escreva sua mensagem aqui..."
+            placeholder="Write your message here..."
             required
           ></textarea>
 
-          <!-- Campos ocultos do FormSubmit -->
           <input
             type="hidden"
             name="_next"
             value="https://gabrielkleber.github.io/portfolio/obrigado.html"
           />
 
-          <button type="submit">Enviar Mensagem</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
-
-    <!-- Sliders -->
-
-    <div class="modal" id="fynder">
-      <button class="close_modal" onclick="close_modal('fynder')">[X]</button>
-      <button class="left_arrow" onclick="back_slide('fynder')">
-        <i class="bi bi-caret-left"></i>
-      </button>
-      <button class="right_arrow" onclick="pass_slide('fynder')">
-        <i class="bi bi-caret-right"></i>
-      </button>
-      <div class="slider">
-        <div class="slide first">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide1.png"
-            alt="Fynder Food Inicial"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide2.png"
-            alt="Menu do Fynder"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide3.png"
-            alt="Filtro do Fynder"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide4.png"
-            alt="Quem Somos"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide5.png"
-            alt="Oque fazemos"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide6.png"
-            alt="Login do Fynder"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide7.png"
-            alt="Cadastro do Fynder"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide8.png"
-            alt="Item Selecionado"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide9.png"
-            alt="Item no Carrinho"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/fynder/slide10.png"
-            alt="Finalizar Compra"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="automind">
-      <button class="close_modal" onclick="close_modal('automind')">[X]</button>
-      <button class="left_arrow" onclick="back_slide('automind')">
-        <i class="bi bi-caret-left"></i>
-      </button>
-      <button class="right_arrow" onclick="pass_slide('automind')">
-        <i class="bi bi-caret-right"></i>
-      </button>
-      <div class="slider">
-        <div class="slide first">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide1.png"
-            alt="AutoMind Inicial"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide2.png"
-            alt="Tela de Login"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide3.png"
-            alt="Tela de Cadastro"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide4.png"
-            alt="Tela de Bem vindo"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide5.png"
-            alt="Cadastro de Item"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide6.png"
-            alt="Explicação da Taxonomia de Bloom"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide7.png"
-            alt="Banco de Itens"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide8.png"
-            alt="Avaliações existentes"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide9.png"
-            alt="Pré-visualização da avaliação"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/automind/slide10.png"
-            alt="Avaliação Emitida"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="lista">
-      <button class="close_modal" onclick="close_modal('lista')">[X]</button>
-      <button class="left_arrow" onclick="back_slide('lista')">
-        <i class="bi bi-caret-left"></i>
-      </button>
-      <button class="right_arrow" onclick="pass_slide('lista')">
-        <i class="bi bi-caret-right"></i>
-      </button>
-      <div class="slider">
-        <div class="slide first">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide1.png"
-            alt="Página Inicial"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide2.png"
-            alt="Cadastro de Nova Tarefa"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide3.png"
-            alt="Nova Tarefa Cadastrada"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide4.png"
-            alt="Filtrando por Novas Tarefas"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide5.png"
-            alt="Filtrando por Tarefas em Progresso"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide6.png"
-            alt="Filtrando por Tarefas Canceladas"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide7.png"
-            alt="Filtrando por Tarefas Concluidas"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide8.png"
-            alt="Editando uma Tarefa"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide9.png"
-            alt="Eliminando uma Tarefa"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="assets/img/img_apoio/slides/lista/slide10.png"
-            alt="Mudando o Status de uma Tarefa"
-          />
-        </div>
-      </div>
-    </div>
+    <script src="assets/js/windows.js"></script>
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/softskills.js"></script>
+    <script src="assets/js/copy.js"></script>
   </body>
-  <script src="assets/js/windows.js"></script>
-  <script src="assets/js/slides.js"></script>
-  <script src="assets/js/softskills.js"></script>
-  <script src="assets/js/copy.js"></script>
 </html>
